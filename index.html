@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Afribite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <a href="index.html" class="logo">
+          <img src="Assets/Code_Generated_Image.png" alt="Afribite Logo" />
+        </a>
+
+        <div class="nav-cta">
+          <nav class="nav">
+            <ul class="nav-list">
+              <li><a href="index.html" class="nav-link active">Home</a></li>
+              <li><a href="about.html" class="nav-link">About</a></li>
+              <li><a href="menu.html" class="nav-link">Menu</a></li>
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- CTA Button -->
+          <div class="header-actions">
+            <a href="menu.html" class="btn btn-primary">Order Now</a>
+          </div>
+        </div>
+
+        <i class="fa-solid fa-bars-staggered menu-icon"></i>
+      </div>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- DESKTOP HERO SECTION (Hidden on Mobile)   -->
+    <!-- ========================================== -->
+    <section class="hero-sec desktop-hero">
+      <div class="hero">
+        <div class="container">
+          <div class="hero-text">
+            <h1>Taste the heart of Africa</h1>
+            <p>
+              Authentic African flavors crafted with passion and tradition.
+              Every bite brings you closer to the vibrant spirit of the
+              continent.
+            </p>
+            <a href="menu.html">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- MOBILE HERO SECTION (Hidden on Desktop)   -->
+    <!-- ========================================== -->
+    <section class="hero-sec mobile-hero">
+      <div class="mobile-hero-container">
+        <div class="mobile-hero-text">
+          <h1>Taste the heart of Africa</h1>
+          <p>
+            Authentic African flavors crafted with passion and tradition. Every
+            bite brings you closer to the vibrant spirit of the continent.
+          </p>
+          <a href="menu.html" class="mobile-hero-btn">Order Now</a>
+        </div>
+        <div class="mobile-hero-image">
+          <img src="Assets/2R5A6492-scaled.jpg" alt="AfriBite Special Dish" />
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <section class="stats-bar">
+      <div class="container">
+        <div class="stat-item">
+          <i class="fa-solid fa-bowl-food"></i>
+          <h3>5+ Years</h3>
+          <p>Of Nigerian cooking excellence</p>
+        </div>
+        <div class="stat-item">
+          <i class="fa-solid fa-store"></i>
+          <h3>2+</h3>
+          <p>Outlets And still growing.</p>
+        </div>
+        <div class="stat-item">
+          <i class="fa-solid fa-award"></i>
+          <h3>1,000+</h3>
+          <p>Hospitality and trained professionals</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section class="about-section">
+      <div class="about-container">
+        <!-- Image Column -->
+        <div class="about-image-wrapper">
+          <img
+            src="Assets/20-Minute Pork Fried Rice Recipe - Creme De La Crumb.jfif"
+            alt="AfriBite African Dish"
+            class="about-img"
+          />
+        </div>
+
+        <!-- Content Column -->
+        <div class="about-content">
+          <h1 class="about-title">Rooted in Tradition, Stirred with Passion</h1>
+          <p class="about-description">
+            At AfriBite, we are passionate about bringing the rich, vibrant, and
+            diverse flavors of African cuisine directly to your plate. From the
+            sizzling spices of West African Jollof and Suya to the fragrant
+            stewed delights of East and South Africa, our mission is to
+            celebrate African culinary heritage using authentic recipes and
+            fresh ingredients.
+          </p>
+          <a href="about.html" class="about-btn">About Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU CATEGORIES -->
+    <section class="menu-section">
+      <p>Delicious Offerings</p>
+      <h2>Check out our amazing categories</h2>
+
+      <!-- MENU CONTAINER   -->
+      <div class="menu-container">
+        <!-- CATEGORY 1: RICE -->
+        <a
+          href="menu.html#rice"
+          class="category-item"
+          style="text-decoration: none; color: inherit"
+        >
+          <div class="menu-categories">
+            <img src="Assets/download.jfif" alt="Rice" />
+          </div>
+          <h3 class="rice-text">Rice</h3>
+        </a>
+
+        <!-- CATEGORY 2: SOUP -->
+        <a
+          href="menu.html#soups"
+          class="category-item"
+          style="text-decoration: none; color: inherit"
+        >
+          <div class="menu-categories">
+            <img
+              src="Assets/Our soup is ready come with you swallow.jfif"
+              alt="soup"
+            />
+          </div>
+          <h3 class="rice-text">Soup</h3>
+        </a>
+
+        <!-- CATEGORY 3: SWALLOW -->
+        <a
+          href="menu.html#swallow"
+          class="category-item"
+          style="text-decoration: none; color: inherit"
+        >
+          <div class="menu-categories">
+            <img
+              src="Assets/Nigerian Eba (How To Make Eba) - My Active Kitchen.jfif"
+              alt="swallow"
+            />
+          </div>
+          <h3 class="rice-text">Swallow</h3>
+        </a>
+
+        <!-- CATEGORY 4: PROTEIN -->
+        <a
+          href="menu.html#protein"
+          class="category-item"
+          style="text-decoration: none; color: inherit"
+        >
+          <div class="menu-categories">
+            <img src="Assets/SUYA!.jfif" alt="protein" />
+          </div>
+          <h3 class="rice-text">Protein</h3>
+        </a>
+      </div>
+
+      <!-- MENU BUTTON -->
+      <div class="pt-2">
+        <a
+          href="menu.html"
+          class="btn-view-menu"
+          style="
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+          "
+        >
+          <span>View Full Menu</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+            width="20"
+            height="20"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M14 5l7 7m0 0l-7 7m7-7H3"
+            />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- NEW SECTION 2: WHY CHOOSE US-->
+    <section class="why-section">
+      <div class="why-head">
+        <p class="section-eyebrow light-eyebrow">Why AfriBite</p>
+        <h2>More than a meal, an experience</h2>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <span class="why-icon"><i class="fa-solid fa-leaf"></i></span>
+          <h3>Fresh Ingredients</h3>
+          <p>
+            Locally sourced produce and spices delivered fresh to our kitchens
+            daily.
+          </p>
+        </div>
+        <div class="why-card">
+          <span class="why-icon"><i class="fa-solid fa-utensils"></i></span>
+          <h3>Authentic Recipes</h3>
+          <p>
+            Time-honoured family recipes that stay true to African tradition.
+          </p>
+        </div>
+        <div class="why-card">
+          <span class="why-icon"><i class="fa-solid fa-truck-fast"></i></span>
+          <h3>Fast Delivery</h3>
+          <p>Hot, fresh meals delivered to your door in record time.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-icon"><i class="fa-solid fa-heart"></i></span>
+          <h3>Made with Love</h3>
+          <p>
+            Every plate is prepared with the care and passion of home cooking.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW SECTION 3: NEWSLETTER CTA-->
+    <section class="newsletter-section">
+      <div class="newsletter-inner">
+        <h2>Join the AfriBite family</h2>
+        <p>
+          Subscribe for fresh menu drops, exclusive offers and a taste of Africa
+          in your inbox.
+        </p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input
+            type="email"
+            placeholder="Enter your email address"
+            aria-label="Email address"
+          />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <h3>AfriBite</h3>
+          <p>
+            Taste the heart of Africa — authentic African flavours crafted with
+            passion and tradition.
+          </p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Twitter"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="#" aria-label="WhatsApp"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>
+              <i class="fa-solid fa-location-dot"></i> Lekki: 12 Admiralty Way,
+              Lekki Phase 1, Lagos
+            </li>
+            <li><i class="fa-solid fa-phone"></i> +234 803 844 2592</li>
+            <li><i class="fa-solid fa-envelope"></i> hello@afribite.com</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Opening Hours</h4>
+          <ul>
+            <li>Mon – Fri: 9am – 10pm</li>
+            <li>Sat – Sun: 10am – 11pm</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 AfriBite. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,453 @@
+/* ========= BASE ========= */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #230003;
+  background-color: #fcf8f8;
+}
+
+/* ========= HEADER ========= */
+.header {
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 4px 20px #23000314;
+}
+.menu-icon {
+  display: block;
+  font-size: 1.5rem;
+  color: #230003;
+  cursor: pointer;
+}
+.header-container {
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header .logo img {
+  width: 120px;
+  display: block;
+}
+.header .nav {
+  display: none;
+}
+.header .btn {
+  display: none;
+}
+
+/* ========= NEW & ENHANCED PAGE BANNER ========= */
+.page-banner {
+  margin-top: 72px;
+  background:
+    linear-gradient(#230003cc, #5d0008d9),
+    url("Assets/“Holiday Gift Inspiration for Friends & Family”.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 90px 20px;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-banner-inner {
+  max-width: 800px;
+  background: #ffffff12;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 35px 25px;
+  border-radius: 20px;
+  border: 1px #ffffff26;
+}
+
+.banner-eyebrow {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: #ff8585;
+  margin-bottom: 8px;
+}
+
+.page-banner h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.banner-subtitle {
+  font-size: 1.05rem;
+  color: #f3e6e8;
+  line-height: 1.5;
+}
+
+/* ========= MENU PAGE ========= */
+.menu-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px 70px;
+}
+
+.menu-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+  position: sticky;
+  top: 80px;
+  z-index: 10;
+  background-color: rgba(252, 248, 248, 0.9);
+  padding: 10px 0;
+  backdrop-filter: blur(5px);
+}
+
+.menu-tab {
+  padding: 0.85rem 2rem;
+  border-radius: 50px;
+  background-color: #ffffff;
+  border: 1px solid #ebdada;
+  color: #230003;
+  text-decoration: none;
+}
+
+.menu-tab:hover {
+  background-color: #eb2625;
+  color: #ffffff;
+  border-color: #eb2625;
+}
+
+.menu-group-title {
+  font-family: "Bricolage Grotesque", "Poppins", sans-serif;
+  font-size: 1.8rem;
+  color: #230003;
+  margin: 40px 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 3px;
+  display: inline-block;
+}
+
+.food-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+  margin-bottom: 30px;
+}
+
+.food-card {
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 0 5px 15px #2300030a;
+  border: 1px solid #f2e1e2;
+  display: flex;
+  flex-direction: column;
+}
+
+.food-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px #eb262526;
+}
+
+.food-media {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+  background-color: #f7e9ea;
+}
+
+.food-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.food-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.food-title-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.food-title-row h3 {
+  font-size: 1.2rem;
+  color: #230003;
+}
+
+.food-price {
+  color: #eb2625;
+}
+
+.food-body p {
+  color: #6b4a4f;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  margin: 12px 0 20px;
+  flex-grow: 1;
+}
+
+.food-order {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #eb2625;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.85rem 2rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px #eb262533;
+}
+
+.food-order:hover {
+  background-color: #230003;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* ========= SPECIAL HIGHLIGHT CARD ========= */
+.special-highlight-card {
+  background:
+    linear-gradient(#200407bf),
+    url("Assets/Gemini_Generated_Image_84bc9o84bc9o84bc.jfif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 1.75rem;
+  padding: 60px 40px;
+  color: #ffffff;
+  margin: 60px 0;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(235, 38, 37, 0.2);
+}
+
+.highlight-tag {
+  display: inline-block;
+  background-color: #eb2625;
+  color: #ffffff;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  padding: 6px 16px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 12px #eb262566;
+}
+
+.highlight-card-inner h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.4rem;
+  line-height: 1.2;
+  color: #ffffff;
+  margin: 10px 0 15px;
+  text-shadow: 0 2px 8px #00000099;
+}
+
+.highlight-card-inner p {
+  color: #f3e6e8;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  max-width: 720px;
+  text-shadow: 0 1px 4px #00000080;
+}
+
+.highlight-price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 15px;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #ffb3b3;
+  letter-spacing: 0.5px;
+}
+
+.highlight-price {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 0 2px 6px #00000066;
+}
+
+.highlight-order-btn {
+  font-size: 1rem;
+  padding: 0.85rem 2rem;
+}
+
+/* ========= FOOTER ========= */
+.footer {
+  background-color: #1a0002;
+  color: #d9c5c8;
+  padding: 60px 20px 0;
+}
+.footer-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.footer-col h3 {
+  color: #eb2625;
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+.footer-col h4 {
+  color: #ffffff;
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+.footer-brand p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+.footer-socials {
+  display: flex;
+  gap: 12px;
+}
+.footer-socials a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff14;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.footer-socials a:hover {
+  background-color: #eb2625;
+}
+.footer-col ul {
+  list-style: none;
+}
+.footer-col ul li {
+  margin-bottom: 0.65rem;
+  font-size: 0.95rem;
+}
+.footer-col ul li i {
+  color: #eb2625;
+  margin-right: 8px;
+}
+.footer-col ul li a {
+  color: #d9c5c8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #eb2625;
+}
+.footer-bottom {
+  max-width: 1200px;
+  margin: 2.5rem auto 0;
+  border-top: 1px solid #ffffff1a;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* ========= RESPONSIVE ========= */
+@media (min-width: 768px) {
+  .header .nav {
+    display: block;
+  }
+  .header .nav-list {
+    display: flex;
+    list-style: none;
+    gap: 1.25rem;
+  }
+  .header .nav-link {
+    text-decoration: none;
+    color: #333333;
+    transition: color 0.3s ease;
+  }
+  .header .nav-link:hover,
+  .header .nav-link.active {
+    color: #eb2625;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+  .header .btn {
+    display: inline-block;
+    padding: 0.85rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    text-align: center;
+  }
+  .header .btn-primary {
+    background-color: #eb2625;
+    color: #ffffff;
+  }
+  .header .nav-cta {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .page-banner {
+    padding: 130px 20px;
+  }
+
+  .page-banner h1 {
+    font-size: 3.8rem;
+  }
+  .food-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .menu-group-title {
+    font-size: 2.2rem;
+  }
+  .special-highlight-card {
+    padding: 80px 60px;
+  }
+
+  .highlight-card-inner h2 {
+    font-size: 2.8rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 2fr 1fr 1.4fr 1.2fr;
+    gap: 2.5rem;
+  }
+}

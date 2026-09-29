@@ -93,7 +93,7 @@ body {
 .nav-link {
   text-decoration: none;
   color: #230003;
-  font-weight: 500;
+  
   font-size: 1.1rem;
 }
 
@@ -158,10 +158,12 @@ body {
   box-shadow: 0 8px 32px 0 #00000033;
 }
 
-.banner-eyebrow {
+ .banner-eyebrow {
   color: #ff8585;
   font-size: 0.85rem;
   margin-bottom: 8px;
+  text-align: center;
+  display: block;
 }
 
 .page-banner h1 {

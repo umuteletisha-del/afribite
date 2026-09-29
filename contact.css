@@ -21,29 +21,37 @@ body {
 }
 
 /* ========= HEADER ========= */
+ /* ==========================================================================
+   2. HEADER & NAVIGATION (MOBILE FIRST & DESKTOP)
+   ========================================================================== */
 .header {
-  background-color: #ffffff;
-  position: fixed;
-  left: 0;
+  position: relative;
   width: 100%;
+  z-index: 100;
+  background-color: #ffffff;
+  box-shadow: 0 4px 20px rgba(35, 0, 3, 0.08);
 }
 
 .header-container {
-  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .header .logo img {
   width: 120px;
-  display: block;
 }
 
+ 
 .nav-toggle {
   display: none;
 }
 
+ 
 .menu-icon {
   display: flex;
   align-items: center;
@@ -51,12 +59,14 @@ body {
   font-size: 1.5rem;
   color: #230003;
   cursor: pointer;
+  z-index: 1001;
 }
 
 .menu-icon .icon-close {
   display: none;
 }
 
+ 
 .nav-cta {
   display: none;
   flex-direction: column;
@@ -68,6 +78,7 @@ body {
   padding: 1.5rem 1rem;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
   gap: 1.5rem;
+  z-index: 1000;
 }
 
 .header .nav {
@@ -85,6 +96,7 @@ body {
 .nav-link {
   text-decoration: none;
   color: #230003;
+  font-weight: 500;
   font-size: 1.1rem;
 }
 
@@ -111,6 +123,7 @@ body {
   color: #ffffff;
 }
 
+ 
 .nav-toggle:checked ~ .nav-cta {
   display: flex;
 }
@@ -123,22 +136,21 @@ body {
   display: inline-block;
 }
 
-/* ========= PAGE BANNER ========= */
+/* ==========================================================================
+   3. PAGE BANNER
+   ========================================================================== */
 .page-banner {
-  margin-top: 72px;
-  background:
-    linear-gradient(rgba(35, 0, 3, 0.8), rgba(93, 0, 8, 0.85)),
-    url(Assets/Africa.jpg);
-  background-size: cover;
-  background-position: center;
+  margin-top: 0;  
   padding: 90px 20px;
-  text-align: center;
-  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  color: #ffffff;
+  background:
+    linear-gradient(rgba(35, 0, 3, 0.8), rgba(93, 0, 8, 0.85)),
+    url("Assets/“Holiday Gift Inspiration for Friends & Family”.jpg") center/cover no-repeat;
 }
-
 .page-banner-inner {
   max-width: 750px;
   background: #ffffff12;

@@ -26,6 +26,9 @@
           <img src="Assets/Code_Generated_Image.png" alt="Afribite Logo" />
         </a>
 
+        <!-- Checkbox for Pure CSS Mobile Menu Toggle -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+
         <div class="nav-cta">
           <nav class="nav">
             <ul class="nav-list">
@@ -42,7 +45,15 @@
           </div>
         </div>
 
-        <i class="fa-solid fa-bars-staggered menu-icon"></i>
+        <!-- Hamburger Icon Label Tied to Toggle Input -->
+        <label
+          for="nav-toggle"
+          class="menu-icon"
+          aria-label="Toggle navigation menu"
+        >
+          <i class="fa-solid fa-bars-staggered icon-open"></i>
+          <i class="fa-solid fa-xmark icon-close"></i>
+        </label>
       </div>
     </header>
 

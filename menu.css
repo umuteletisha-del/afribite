@@ -176,10 +176,6 @@ body {
 
 .menu-tabs {
   position: sticky;
-<<<<<<< HEAD
-  top: 72px;
-=======
->>>>>>> f2547929b689b3e1800b7d9130601d0635bb7fd0
   z-index: 10;
   padding: 10px 0;
   display: flex;

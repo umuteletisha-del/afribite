@@ -138,18 +138,18 @@ body {
    ========================================================================== */
 .page-banner {
   margin-top: 72px;
-  padding: 90px 20px;
+  background:
+    linear-gradient(#230003bf, #5d0008d9),
+    url("Assets/“Holiday Gift Inspiration for Friends & Family”.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  color: #ffffff;
-  background:
-    linear-gradient(rgba(35, 0, 3, 0.8), rgba(93, 0, 8, 0.85)),
-    url("Assets/“Holiday Gift Inspiration for Friends & Family”.jpg")
-      center/cover no-repeat;
 }
-
 .page-banner-inner {
   max-width: 800px;
   background: #ffffff12;

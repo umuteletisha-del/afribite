@@ -1,4 +1,4 @@
- /* ========= BASE ========= */
+/* ========= BASE ========= */
 * {
   padding: 0;
   margin: 0;
@@ -17,6 +17,24 @@ body {
 }
 
 /* ========= HEADER ========= */
+.header {
+  background-color: #ffffff;
+  position: fixed;
+  left: 0;
+  width: 100%;
+}
+
+.header-container {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .logo img {
+  width: 120px;
+  display: block;
+}
 
 .nav-toggle {
   display: none;

@@ -94,7 +94,6 @@ body {
 .nav-link {
   text-decoration: none;
   color: #230003;
-  font-weight: 500;
   font-size: 1.1rem;
 }
 
@@ -368,7 +367,6 @@ body {
   padding: 0.85rem 2rem;
   border-radius: 50px;
   text-decoration: none;
-  font-weight: 600;
   transition: all 0.3s ease;
 }
 .cta-btn.primary {

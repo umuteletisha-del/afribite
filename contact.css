@@ -154,7 +154,7 @@ body {
   -webkit-backdrop-filter: blur(8px);
   padding: 35px 25px;
   border-radius: 20px;
-  border: 1px #ffffff26;
+  border: 1px solid #ffffff26;
   box-shadow: 0 8px 32px 0 #00000033;
 }
 
@@ -201,7 +201,7 @@ body {
 
 .action-grid {
   display: grid;
-  grid-template-columns: 2fr;
+  grid-template-columns: 1fr;
   gap: 1.8rem;
 }
 
@@ -211,7 +211,7 @@ body {
   border-radius: 1.5rem;
   padding: 2.5rem 1.8rem;
   text-align: center;
-  border: 1px #f2e1e2;
+  border: 1px solid #f2e1e2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -519,7 +519,7 @@ body {
 .community-box {
   background: linear-gradient(135deg, #eb2625, #8a0b0a);
   border-radius: 1.8rem;
-  padding: 45px 30px;
+  padding: 35px 20px; /* Reduced side padding on mobile to prevent distortion */
   color: #ffffff;
   text-align: center;
   box-shadow: 0 10px 30px #eb262533;
@@ -529,11 +529,12 @@ body {
   background-color: #ffffff33;
   padding: 5px 16px;
   border-radius: 20px;
+  display: inline-block;
 }
 
 .community-box h2 {
   font-family: "Poppins", sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.8rem; /* Responsive sizing for mobile screens */
   margin: 12px 0;
 }
 
@@ -543,10 +544,13 @@ body {
   color: #fcebeb;
 }
 
+/* Mobile: Stack buttons vertically */
 .social-handles {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   gap: 12px;
+  width: 100%;
 }
 
 .social-pill {
@@ -557,7 +561,11 @@ body {
   text-decoration: none;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
+  width: 100%;
+  max-width: 320px;
+  transition: all 0.3s ease;
 }
 
 .social-pill:hover {
@@ -685,6 +693,25 @@ body {
   }
   .faq-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Desktop: Return social buttons to side-by-side row */
+  .community-box {
+    padding: 45px 30px;
+  }
+
+  .community-box h2 {
+    font-size: 2.5rem;
+  }
+
+  .social-handles {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .social-pill {
+    width: auto;
+    max-width: none;
   }
 
   .footer-grid {
